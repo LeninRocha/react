@@ -1,2 +1,2 @@
-# reactCurso
- documentação do curso de react
+# React Js do zero ao avançado na pratica
+ exercícios praticados no curso
