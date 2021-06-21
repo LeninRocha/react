@@ -4,26 +4,24 @@ class App extends Component {
   constructor(props){
     super(props);
     this.state = {
-      contador: 0
+      hora:'00:00:00'
     }
-    this.aumentar =  this.aumentar.bind(this)
-    this.diminuir = this.diminuir.bind(this)
   }
-  aumentar(){
-    let state = this.state;
-    state.contador +=1;
-    this.setState({state})
+  componentDidMount(){ // esse componente inicia junto com a aplicação
+
+    setInterval(() => {
+      this.setState({hora: new Date().toLocaleTimeString()})
+    }, 1000);
   }
-  diminuir(){
-      let state = this.state;
-      state.contador -=1;
-      this.setState({state})
+
+  componentDidUpdate(){ // sempre que a aplicação atualizar esse componente vai fazer o processo
+    console.log('Atualizou')
   }
+  
   render() { 
     return ( 
       <div>
-        <h1>Contador</h1>
-        <h3><button onClick={this.diminuir.bind(this)}>-</button> {this.state.contador} <button onClick={this.aumentar.bind(this)}>+</button></h3>
+        <h1>Meu projeto {this.state.hora}</h1>
       </div>
      );
   }
