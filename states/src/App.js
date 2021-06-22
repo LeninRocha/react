@@ -9,9 +9,12 @@ class App extends Component {
 
     this.quebraBiscoito = this.quebraBiscoito.bind(this);
 
-    this.frases = ['Drope um acido', 'fume um baseado', 'cheire até ter paranoia',
-  'fique bebado até caçar confunsão no bar','bafora aquele lança','ta sem grana? vai de tiner',
-'ta sem grana? vai de pedra 90','dia de baile, dia de MD','dia triste, vai tomar um rivotril', 'fumar cigarro', ];
+    this.frases = ['Siga os bons e aprenda com eles.', 'O bom-senso vale mais do que muito conhecimento.', 
+    'O riso é a menor distância entre duas pessoas.', 
+    'Deixe de lado as preocupações e seja feliz.',
+    'Realize o óbvio, pense no improvável e conquiste o impossível.',
+    'Acredite em milagres, mas não dependa deles.',
+    'A maior barreira para o sucesso é o medo do fracasso.'];
   }
   
   quebraBiscoito(){
@@ -23,7 +26,7 @@ class App extends Component {
   render() { 
     return ( 
       <div className='container'>
-        <h1>Biscoito das drogas</h1>
+        <h1>Biscoito da sorte</h1>
         <img src={biscoito} alt='biscoito' className="img" />
         <Botao nome='Abrir Biscoito' acaoBtn={this.quebraBiscoito}/>
         <h3 className='textoFrase'>{this.state.textoFrase}</h3>
