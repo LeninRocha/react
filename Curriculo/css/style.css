@@ -1,0 +1,57 @@
+body{
+    margin:0;
+    padding: 0;
+
+}
+body{
+    background-color: rgb(159, 187, 240) !important;
+    color: #fff
+}
+.cabecalho{
+    margin-top: 50px;
+}
+.espacoFoto{
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+.sobre{
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.foto{
+    width: 300px;
+    border-radius: 50%;
+    border: solid black 2px;
+   
+}
+.icone{
+    width: 50px;
+    margin: 20px ;
+}
+.informacoes{
+    padding: 20px;
+    flex-direction: column;
+    justify-content: center;
+    text-align: justify;
+    margin-top: 50px;
+    border:solid black 2px;
+    border-radius: 5px;
+    margin: 50px 50px 0 50px;
+
+}
+footer p{
+    text-align: center;
+}
+.informacoes h3{
+    text-align: center;
+}
+a{
+    background-color: black;
+}
+.unico{
+    text-align: center;
+}
