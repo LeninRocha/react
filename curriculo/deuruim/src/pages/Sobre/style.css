@@ -1,0 +1,18 @@
+
+.espacoFoto{
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+.sobre{
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.foto{
+    width: 300px;
+    border-radius: 50%;
+    border: solid black 2px;
+}
